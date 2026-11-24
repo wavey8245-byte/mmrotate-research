@@ -1,0 +1,19 @@
+{
+  "source_sha256": "8bc942e8d3d0a6c790afac26a1d7993958cbe482fc8cf6f07155dfafc64d8d83",
+  "tiles": 64,
+  "positions_are_paired_pre_NMS": true,
+  "pairs": 1694,
+  "already_preferred": 1463,
+  "inverted": 231,
+  "mean_raw_content_weight": 1.2927956581115723,
+  "weight_p10_p50_p90": [
+    1.0,
+    1.3811784982681274,
+    1.4857356548309326
+  ],
+  "fraction_of_rank_loss_from_inverted": 0.5190514326095581,
+  "mean_class_logit_gradient_cosine": 0.9950274884700775,
+  "batches": 30,
+  "minimum_cosine": 0.9852475523948669,
+  "mean_matched_norm_difference": 0.08989914373184243
+}

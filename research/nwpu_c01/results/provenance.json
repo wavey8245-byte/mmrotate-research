@@ -1,0 +1,20 @@
+{
+  "seed": 42,
+  "full_training_steps": 11700,
+  "short_training_steps": 975,
+  "training_tiles": 650,
+  "evaluation_tiles": 339,
+  "init_sha256": "839cde7f2e7028c239693fd22285cb10c1cdde8e404374870972ed0c3a90c354",
+  "reference_sha256": "ac3dea35a56c0423ef3d990b476a166fb1b7ea88ec9a6276b59f23d02bc038b7",
+  "size_weight": 0.1942947498124365,
+  "frozen_classifier_inputs": {
+    "FIELD_P3": "8bc942e8d3d0a6c790afac26a1d7993958cbe482fc8cf6f07155dfafc64d8d83",
+    "FIELD_AGREE": "0acedb0b9aa3d8af6b37404848109a45f0ce22626eb01973ac387fedf415dc74"
+  },
+  "rank_training": {
+    "pairs": 52584,
+    "gt_with_pairs": 6757,
+    "upweighted": 39747,
+    "batches_with_pairs": 935
+  }
+}

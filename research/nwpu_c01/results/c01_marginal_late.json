@@ -1,0 +1,1297 @@
+{
+  "reference_sha256": "0acedb0b9aa3d8af6b37404848109a45f0ce22626eb01973ac387fedf415dc74",
+  "reference_epoch": 36,
+  "semantic_weight": 0.1,
+  "flip": "none",
+  "gradient_output": "FCOS angle output (not shared model parameters)",
+  "groups": {
+    "all": {
+      "positions": 1429,
+      "bd_sq": 0.041965443545589315,
+      "c01_sq": 1.9687996032941065e-05,
+      "dot": 1.2616601473525848e-05,
+      "common_nonzero": 520,
+      "same_sign": 280,
+      "sign_flips_after_adding_c01": 14,
+      "c01_to_bd_angle_rms": 0.021659820228516702,
+      "angle_gradient_cosine": 0.013880199861589785
+    },
+    "near_square": {
+      "positions": 520,
+      "bd_sq": 0.0007725876535818442,
+      "c01_sq": 1.9687996032941065e-05,
+      "dot": 1.2616601473525848e-05,
+      "common_nonzero": 520,
+      "same_sign": 280,
+      "sign_flips_after_adding_c01": 14,
+      "c01_to_bd_angle_rms": 0.15963454355341905,
+      "angle_gradient_cosine": 0.10229814218023425
+    }
+  },
+  "max_direct_distance_gradient": 0.0,
+  "iou_tolerance": 1e-05,
+  "bd_rms_for_angle_step_scaling": 0.001218911599607368,
+  "angle_cap_radians": 0.15,
+  "trials": {
+    "equal_angle_step_0.002": {
+      "groups": {
+        "near_square": {
+          "n": 520,
+          "bd_better_than_start": 299,
+          "bd_worse_than_start": 190,
+          "combined_better_than_start": 313,
+          "combined_worse_than_start": 176,
+          "rescue_bd_regression": 14,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 14,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.0002052152959200052,
+          "mean_combined_iou_gain": 0.00022963715287355278,
+          "mean_delta_vs_bd": 2.442185695354755e-05
+        },
+        "same_sign": {
+          "n": 280,
+          "bd_better_than_start": 247,
+          "bd_worse_than_start": 22,
+          "combined_better_than_start": 247,
+          "combined_worse_than_start": 22,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 0,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.0006197620715413775,
+          "mean_combined_iou_gain": 0.0006197620715413775,
+          "mean_delta_vs_bd": 0.0
+        },
+        "opposed": {
+          "n": 240,
+          "bd_better_than_start": 52,
+          "bd_worse_than_start": 168,
+          "combined_better_than_start": 66,
+          "combined_worse_than_start": 154,
+          "rescue_bd_regression": 14,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 14,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": -0.00027842260897159576,
+          "mean_combined_iou_gain": -0.00022550858557224274,
+          "mean_delta_vs_bd": 5.291402339935303e-05
+        },
+        "opposed_kept_bd_sign": {
+          "n": 226,
+          "bd_better_than_start": 52,
+          "bd_worse_than_start": 154,
+          "combined_better_than_start": 52,
+          "combined_worse_than_start": 154,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 0,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": -0.00026755747014442374,
+          "mean_combined_iou_gain": -0.00026755747014442374,
+          "mean_delta_vs_bd": 0.0
+        },
+        "opposed_flipped": {
+          "n": 14,
+          "bd_better_than_start": 0,
+          "bd_worse_than_start": 14,
+          "combined_better_than_start": 14,
+          "combined_worse_than_start": 0,
+          "rescue_bd_regression": 14,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 14,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": -0.0004538169928959438,
+          "mean_combined_iou_gain": 0.0004532805510929653,
+          "mean_delta_vs_bd": 0.0009070975439889091
+        }
+      },
+      "clipped": [
+        0,
+        0
+      ],
+      "by_class": {
+        "airplane": {
+          "n": 234,
+          "bd_better_than_start": 118,
+          "bd_worse_than_start": 95,
+          "combined_better_than_start": 127,
+          "combined_worse_than_start": 86,
+          "rescue_bd_regression": 9,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 9,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.00016713091450878698,
+          "mean_combined_iou_gain": 0.0002107439387557853,
+          "mean_delta_vs_bd": 4.361302424699832e-05
+        },
+        "storage-tank": {
+          "n": 138,
+          "bd_better_than_start": 95,
+          "bd_worse_than_start": 40,
+          "combined_better_than_start": 95,
+          "combined_worse_than_start": 40,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 0,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.00038642101529715717,
+          "mean_combined_iou_gain": 0.00038642101529715717,
+          "mean_delta_vs_bd": 0.0
+        },
+        "baseball-diamond": {
+          "n": 140,
+          "bd_better_than_start": 79,
+          "bd_worse_than_start": 54,
+          "combined_better_than_start": 84,
+          "combined_worse_than_start": 49,
+          "rescue_bd_regression": 5,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 5,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 7.763419832502093e-05,
+          "mean_combined_iou_gain": 9.544789791107177e-05,
+          "mean_delta_vs_bd": 1.781369958605085e-05
+        },
+        "basketball-court": {
+          "n": 8,
+          "bd_better_than_start": 7,
+          "bd_worse_than_start": 1,
+          "combined_better_than_start": 7,
+          "combined_worse_than_start": 1,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 0,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.0004260540008544922,
+          "mean_combined_iou_gain": 0.0004260540008544922,
+          "mean_delta_vs_bd": 0.0
+        }
+      },
+      "isolated_equal_step_c01_direction": {
+        "near_square": {
+          "improves": 415,
+          "worsens": 73
+        },
+        "same_sign": {
+          "improves": 247,
+          "worsens": 22
+        },
+        "opposed": {
+          "improves": 168,
+          "worsens": 51
+        },
+        "opposed_kept_bd_sign": {
+          "improves": 154,
+          "worsens": 51
+        },
+        "opposed_flipped": {
+          "improves": 14,
+          "worsens": 0
+        }
+      }
+    },
+    "common_scale_bd_rms_0.002": {
+      "groups": {
+        "near_square": {
+          "n": 520,
+          "bd_better_than_start": 272,
+          "bd_worse_than_start": 166,
+          "combined_better_than_start": 289,
+          "combined_worse_than_start": 149,
+          "rescue_bd_regression": 10,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 282,
+          "combined_loses_to_bd": 4,
+          "mean_bd_iou_gain": 0.00014964812077008762,
+          "mean_combined_iou_gain": 0.00019916129799989554,
+          "mean_delta_vs_bd": 4.951317722980793e-05
+        },
+        "same_sign": {
+          "n": 280,
+          "bd_better_than_start": 230,
+          "bd_worse_than_start": 9,
+          "combined_better_than_start": 236,
+          "combined_worse_than_start": 9,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 165,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.0004418698804719108,
+          "mean_combined_iou_gain": 0.0004985343132700239,
+          "mean_delta_vs_bd": 5.666443279811314e-05
+        },
+        "opposed": {
+          "n": 240,
+          "bd_better_than_start": 42,
+          "bd_worse_than_start": 157,
+          "combined_better_than_start": 53,
+          "combined_worse_than_start": 140,
+          "rescue_bd_regression": 10,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 117,
+          "combined_loses_to_bd": 4,
+          "mean_bd_iou_gain": -0.00019127726554870605,
+          "mean_combined_iou_gain": -0.0001501072198152542,
+          "mean_delta_vs_bd": 4.117004573345184e-05
+        },
+        "opposed_kept_bd_sign": {
+          "n": 226,
+          "bd_better_than_start": 42,
+          "bd_worse_than_start": 145,
+          "combined_better_than_start": 42,
+          "combined_worse_than_start": 140,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 104,
+          "combined_loses_to_bd": 4,
+          "mean_bd_iou_gain": -0.00020100901612138327,
+          "mean_combined_iou_gain": -0.0001611547396246311,
+          "mean_delta_vs_bd": 3.985427649675217e-05
+        },
+        "opposed_flipped": {
+          "n": 14,
+          "bd_better_than_start": 0,
+          "bd_worse_than_start": 12,
+          "combined_better_than_start": 11,
+          "combined_worse_than_start": 0,
+          "rescue_bd_regression": 10,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 13,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": -3.417900630405971e-05,
+          "mean_combined_iou_gain": 2.823131425040109e-05,
+          "mean_delta_vs_bd": 6.24103205544608e-05
+        }
+      },
+      "clipped": [
+        0,
+        0
+      ],
+      "by_class": {
+        "airplane": {
+          "n": 234,
+          "bd_better_than_start": 108,
+          "bd_worse_than_start": 87,
+          "combined_better_than_start": 115,
+          "combined_worse_than_start": 77,
+          "rescue_bd_regression": 6,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 150,
+          "combined_loses_to_bd": 1,
+          "mean_bd_iou_gain": 0.00010310151638128818,
+          "mean_combined_iou_gain": 0.00015443843654078297,
+          "mean_delta_vs_bd": 5.1336920159494774e-05
+        },
+        "storage-tank": {
+          "n": 138,
+          "bd_better_than_start": 85,
+          "bd_worse_than_start": 25,
+          "combined_better_than_start": 85,
+          "combined_worse_than_start": 25,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 14,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.000256531480429829,
+          "mean_combined_iou_gain": 0.0002601256837015567,
+          "mean_delta_vs_bd": 3.594203271727631e-06
+        },
+        "baseball-diamond": {
+          "n": 140,
+          "bd_better_than_start": 72,
+          "bd_worse_than_start": 53,
+          "combined_better_than_start": 82,
+          "combined_worse_than_start": 46,
+          "rescue_bd_regression": 4,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 110,
+          "combined_loses_to_bd": 3,
+          "mean_bd_iou_gain": 7.689339773995536e-05,
+          "mean_combined_iou_gain": 0.00015436112880706787,
+          "mean_delta_vs_bd": 7.746773106711251e-05
+        },
+        "basketball-court": {
+          "n": 8,
+          "bd_better_than_start": 7,
+          "bd_worse_than_start": 1,
+          "combined_better_than_start": 7,
+          "combined_worse_than_start": 1,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 8,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.0009406059980392456,
+          "mean_combined_iou_gain": 0.001239672303199768,
+          "mean_delta_vs_bd": 0.00029906630516052246
+        }
+      },
+      "isolated_equal_step_c01_direction": {
+        "near_square": {
+          "improves": 415,
+          "worsens": 73
+        },
+        "same_sign": {
+          "improves": 247,
+          "worsens": 22
+        },
+        "opposed": {
+          "improves": 168,
+          "worsens": 51
+        },
+        "opposed_kept_bd_sign": {
+          "improves": 154,
+          "worsens": 51
+        },
+        "opposed_flipped": {
+          "improves": 14,
+          "worsens": 0
+        }
+      }
+    },
+    "equal_angle_step_0.01": {
+      "groups": {
+        "near_square": {
+          "n": 520,
+          "bd_better_than_start": 303,
+          "bd_worse_than_start": 199,
+          "combined_better_than_start": 317,
+          "combined_worse_than_start": 185,
+          "rescue_bd_regression": 14,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 14,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.0009302947956782121,
+          "mean_combined_iou_gain": 0.001052506325336603,
+          "mean_delta_vs_bd": 0.00012221152965839093
+        },
+        "same_sign": {
+          "n": 280,
+          "bd_better_than_start": 245,
+          "bd_worse_than_start": 24,
+          "combined_better_than_start": 245,
+          "combined_worse_than_start": 24,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 0,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.0030057517545563836,
+          "mean_combined_iou_gain": 0.0030057517545563836,
+          "mean_delta_vs_bd": 0.0
+        },
+        "opposed": {
+          "n": 240,
+          "bd_better_than_start": 58,
+          "bd_worse_than_start": 175,
+          "combined_better_than_start": 72,
+          "combined_worse_than_start": 161,
+          "rescue_bd_regression": 14,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 14,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": -0.001491071656346321,
+          "mean_combined_iou_gain": -0.0012262800087531407,
+          "mean_delta_vs_bd": 0.0002647916475931803
+        },
+        "opposed_kept_bd_sign": {
+          "n": 226,
+          "bd_better_than_start": 58,
+          "bd_worse_than_start": 161,
+          "combined_better_than_start": 58,
+          "combined_worse_than_start": 161,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 0,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": -0.0014421271275630039,
+          "mean_combined_iou_gain": -0.0014421271275630039,
+          "mean_delta_vs_bd": 0.0
+        },
+        "opposed_flipped": {
+          "n": 14,
+          "bd_better_than_start": 0,
+          "bd_worse_than_start": 14,
+          "combined_better_than_start": 14,
+          "combined_worse_than_start": 0,
+          "rescue_bd_regression": 14,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 14,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": -0.0022811761924198697,
+          "mean_combined_iou_gain": 0.0022581091948917936,
+          "mean_delta_vs_bd": 0.004539285387311663
+        }
+      },
+      "clipped": [
+        0,
+        0
+      ],
+      "by_class": {
+        "airplane": {
+          "n": 234,
+          "bd_better_than_start": 121,
+          "bd_worse_than_start": 98,
+          "combined_better_than_start": 130,
+          "combined_worse_than_start": 89,
+          "rescue_bd_regression": 9,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 9,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.0007414165725055923,
+          "mean_combined_iou_gain": 0.000959702791311802,
+          "mean_delta_vs_bd": 0.00021828621880620974
+        },
+        "storage-tank": {
+          "n": 138,
+          "bd_better_than_start": 93,
+          "bd_worse_than_start": 44,
+          "combined_better_than_start": 93,
+          "combined_worse_than_start": 44,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 0,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.001717451042023258,
+          "mean_combined_iou_gain": 0.001717451042023258,
+          "mean_delta_vs_bd": 0.0
+        },
+        "baseball-diamond": {
+          "n": 140,
+          "bd_better_than_start": 82,
+          "bd_worse_than_start": 56,
+          "combined_better_than_start": 87,
+          "combined_worse_than_start": 51,
+          "rescue_bd_regression": 5,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 5,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.0004000293357031686,
+          "mean_combined_iou_gain": 0.0004891080515725272,
+          "mean_delta_vs_bd": 8.907871586935861e-05
+        },
+        "basketball-court": {
+          "n": 8,
+          "bd_better_than_start": 7,
+          "bd_worse_than_start": 1,
+          "combined_better_than_start": 7,
+          "combined_worse_than_start": 1,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 0,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.002156183123588562,
+          "mean_combined_iou_gain": 0.002156183123588562,
+          "mean_delta_vs_bd": 0.0
+        }
+      },
+      "isolated_equal_step_c01_direction": {
+        "near_square": {
+          "improves": 412,
+          "worsens": 88
+        },
+        "same_sign": {
+          "improves": 245,
+          "worsens": 24
+        },
+        "opposed": {
+          "improves": 167,
+          "worsens": 64
+        },
+        "opposed_kept_bd_sign": {
+          "improves": 153,
+          "worsens": 64
+        },
+        "opposed_flipped": {
+          "improves": 14,
+          "worsens": 0
+        }
+      }
+    },
+    "common_scale_bd_rms_0.01": {
+      "groups": {
+        "near_square": {
+          "n": 520,
+          "bd_better_than_start": 298,
+          "bd_worse_than_start": 184,
+          "combined_better_than_start": 311,
+          "combined_worse_than_start": 172,
+          "rescue_bd_regression": 12,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 357,
+          "combined_loses_to_bd": 18,
+          "mean_bd_iou_gain": 0.0006570429756091191,
+          "mean_combined_iou_gain": 0.0009067741724161001,
+          "mean_delta_vs_bd": 0.00024973119680698103
+        },
+        "same_sign": {
+          "n": 280,
+          "bd_better_than_start": 245,
+          "bd_worse_than_start": 18,
+          "combined_better_than_start": 246,
+          "combined_worse_than_start": 18,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 208,
+          "combined_loses_to_bd": 4,
+          "mean_bd_iou_gain": 0.0021821584020342145,
+          "mean_combined_iou_gain": 0.002469589880534581,
+          "mean_delta_vs_bd": 0.0002874314785003662
+        },
+        "opposed": {
+          "n": 240,
+          "bd_better_than_start": 53,
+          "bd_worse_than_start": 166,
+          "combined_better_than_start": 65,
+          "combined_worse_than_start": 154,
+          "rescue_bd_regression": 12,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 149,
+          "combined_loses_to_bd": 14,
+          "mean_bd_iou_gain": -0.001122258355220159,
+          "mean_combined_iou_gain": -0.0009165108203887939,
+          "mean_delta_vs_bd": 0.00020574753483136495
+        },
+        "opposed_kept_bd_sign": {
+          "n": 226,
+          "bd_better_than_start": 53,
+          "bd_worse_than_start": 154,
+          "combined_better_than_start": 52,
+          "combined_worse_than_start": 154,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 135,
+          "combined_loses_to_bd": 14,
+          "mean_bd_iou_gain": -0.0011812010697558918,
+          "mean_combined_iou_gain": -0.0009820416437841095,
+          "mean_delta_vs_bd": 0.0001991594259717823
+        },
+        "opposed_flipped": {
+          "n": 14,
+          "bd_better_than_start": 0,
+          "bd_worse_than_start": 12,
+          "combined_better_than_start": 13,
+          "combined_worse_than_start": 0,
+          "rescue_bd_regression": 12,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 14,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": -0.0001707545348576137,
+          "mean_combined_iou_gain": 0.00014134390013558523,
+          "mean_delta_vs_bd": 0.0003120984349931989
+        }
+      },
+      "clipped": [
+        0,
+        0
+      ],
+      "by_class": {
+        "airplane": {
+          "n": 234,
+          "bd_better_than_start": 119,
+          "bd_worse_than_start": 94,
+          "combined_better_than_start": 126,
+          "combined_worse_than_start": 87,
+          "rescue_bd_regression": 8,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 181,
+          "combined_loses_to_bd": 6,
+          "mean_bd_iou_gain": 0.00035005935236938996,
+          "mean_combined_iou_gain": 0.0006068417659172645,
+          "mean_delta_vs_bd": 0.00025678241354787454
+        },
+        "storage-tank": {
+          "n": 138,
+          "bd_better_than_start": 91,
+          "bd_worse_than_start": 34,
+          "combined_better_than_start": 91,
+          "combined_worse_than_start": 34,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 45,
+          "combined_loses_to_bd": 1,
+          "mean_bd_iou_gain": 0.0011847446794095247,
+          "mean_combined_iou_gain": 0.0012022909046947093,
+          "mean_delta_vs_bd": 1.7546225285184555e-05
+        },
+        "baseball-diamond": {
+          "n": 140,
+          "bd_better_than_start": 81,
+          "bd_worse_than_start": 55,
+          "combined_better_than_start": 87,
+          "combined_worse_than_start": 50,
+          "rescue_bd_regression": 4,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 123,
+          "combined_loses_to_bd": 11,
+          "mean_bd_iou_gain": 0.00040987304278782433,
+          "mean_combined_iou_gain": 0.0008019076926367623,
+          "mean_delta_vs_bd": 0.000392034649848938
+        },
+        "basketball-court": {
+          "n": 8,
+          "bd_better_than_start": 7,
+          "bd_worse_than_start": 1,
+          "combined_better_than_start": 7,
+          "combined_worse_than_start": 1,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 8,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.004858933389186859,
+          "mean_combined_iou_gain": 0.006417296826839447,
+          "mean_delta_vs_bd": 0.0015583634376525879
+        }
+      },
+      "isolated_equal_step_c01_direction": {
+        "near_square": {
+          "improves": 412,
+          "worsens": 88
+        },
+        "same_sign": {
+          "improves": 245,
+          "worsens": 24
+        },
+        "opposed": {
+          "improves": 167,
+          "worsens": 64
+        },
+        "opposed_kept_bd_sign": {
+          "improves": 153,
+          "worsens": 64
+        },
+        "opposed_flipped": {
+          "improves": 14,
+          "worsens": 0
+        }
+      }
+    },
+    "equal_angle_step_0.025": {
+      "groups": {
+        "near_square": {
+          "n": 520,
+          "bd_better_than_start": 294,
+          "bd_worse_than_start": 210,
+          "combined_better_than_start": 308,
+          "combined_worse_than_start": 196,
+          "rescue_bd_regression": 14,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 14,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.0018446778448728415,
+          "mean_combined_iou_gain": 0.002151120797945903,
+          "mean_delta_vs_bd": 0.0003064429530730614
+        },
+        "same_sign": {
+          "n": 280,
+          "bd_better_than_start": 241,
+          "bd_worse_than_start": 28,
+          "combined_better_than_start": 241,
+          "combined_worse_than_start": 28,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 0,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.007010620193822043,
+          "mean_combined_iou_gain": 0.007010620193822043,
+          "mean_delta_vs_bd": 0.0
+        },
+        "opposed": {
+          "n": 240,
+          "bd_better_than_start": 53,
+          "bd_worse_than_start": 182,
+          "combined_better_than_start": 67,
+          "combined_worse_than_start": 168,
+          "rescue_bd_regression": 14,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 14,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": -0.004182254895567894,
+          "mean_combined_iou_gain": -0.003518295163909594,
+          "mean_delta_vs_bd": 0.0006639597316582998
+        },
+        "opposed_kept_bd_sign": {
+          "n": 226,
+          "bd_better_than_start": 53,
+          "bd_worse_than_start": 168,
+          "combined_better_than_start": 53,
+          "combined_worse_than_start": 168,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 0,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": -0.0040865710615056805,
+          "mean_combined_iou_gain": -0.0040865710615056805,
+          "mean_delta_vs_bd": 0.0
+        },
+        "opposed_flipped": {
+          "n": 14,
+          "bd_better_than_start": 0,
+          "bd_worse_than_start": 14,
+          "combined_better_than_start": 14,
+          "combined_worse_than_start": 0,
+          "rescue_bd_regression": 14,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 14,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": -0.005726865359715053,
+          "mean_combined_iou_gain": 0.005655301468712943,
+          "mean_delta_vs_bd": 0.011382166828427995
+        }
+      },
+      "clipped": [
+        0,
+        0
+      ],
+      "by_class": {
+        "airplane": {
+          "n": 234,
+          "bd_better_than_start": 116,
+          "bd_worse_than_start": 103,
+          "combined_better_than_start": 125,
+          "combined_worse_than_start": 94,
+          "rescue_bd_regression": 9,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 9,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.0013612287166791086,
+          "mean_combined_iou_gain": 0.0019089778264363606,
+          "mean_delta_vs_bd": 0.0005477491097572523
+        },
+        "storage-tank": {
+          "n": 138,
+          "bd_better_than_start": 87,
+          "bd_worse_than_start": 51,
+          "combined_better_than_start": 87,
+          "combined_worse_than_start": 51,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 0,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.0032567250123922377,
+          "mean_combined_iou_gain": 0.0032567250123922377,
+          "mean_delta_vs_bd": 0.0
+        },
+        "baseball-diamond": {
+          "n": 140,
+          "bd_better_than_start": 84,
+          "bd_worse_than_start": 55,
+          "combined_better_than_start": 89,
+          "combined_worse_than_start": 50,
+          "rescue_bd_regression": 5,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 5,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.0010513058730534145,
+          "mean_combined_iou_gain": 0.0012739990438733783,
+          "mean_delta_vs_bd": 0.00022269317081996371
+        },
+        "basketball-court": {
+          "n": 8,
+          "bd_better_than_start": 7,
+          "bd_worse_than_start": 1,
+          "combined_better_than_start": 7,
+          "combined_worse_than_start": 1,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 0,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.005511760711669922,
+          "mean_combined_iou_gain": 0.005511760711669922,
+          "mean_delta_vs_bd": 0.0
+        }
+      },
+      "isolated_equal_step_c01_direction": {
+        "near_square": {
+          "improves": 404,
+          "worsens": 98
+        },
+        "same_sign": {
+          "improves": 241,
+          "worsens": 28
+        },
+        "opposed": {
+          "improves": 163,
+          "worsens": 70
+        },
+        "opposed_kept_bd_sign": {
+          "improves": 149,
+          "worsens": 70
+        },
+        "opposed_flipped": {
+          "improves": 14,
+          "worsens": 0
+        }
+      }
+    },
+    "common_scale_bd_rms_0.025": {
+      "groups": {
+        "near_square": {
+          "n": 520,
+          "bd_better_than_start": 300,
+          "bd_worse_than_start": 199,
+          "combined_better_than_start": 313,
+          "combined_worse_than_start": 182,
+          "rescue_bd_regression": 14,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 380,
+          "combined_loses_to_bd": 32,
+          "mean_bd_iou_gain": 0.0013005980505393102,
+          "mean_combined_iou_gain": 0.0019304562646609085,
+          "mean_delta_vs_bd": 0.0006298582141215984
+        },
+        "same_sign": {
+          "n": 280,
+          "bd_better_than_start": 247,
+          "bd_worse_than_start": 20,
+          "combined_better_than_start": 247,
+          "combined_worse_than_start": 19,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 217,
+          "combined_loses_to_bd": 7,
+          "mean_bd_iou_gain": 0.005302728712558746,
+          "mean_combined_iou_gain": 0.006037602254322597,
+          "mean_delta_vs_bd": 0.0007348735417638506
+        },
+        "opposed": {
+          "n": 240,
+          "bd_better_than_start": 53,
+          "bd_worse_than_start": 179,
+          "combined_better_than_start": 66,
+          "combined_worse_than_start": 163,
+          "rescue_bd_regression": 14,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 163,
+          "combined_loses_to_bd": 25,
+          "mean_bd_iou_gain": -0.0033685543884833654,
+          "mean_combined_iou_gain": -0.0028612140566110613,
+          "mean_delta_vs_bd": 0.0005073403318723043
+        },
+        "opposed_kept_bd_sign": {
+          "n": 226,
+          "bd_better_than_start": 53,
+          "bd_worse_than_start": 165,
+          "combined_better_than_start": 52,
+          "combined_worse_than_start": 163,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 149,
+          "combined_loses_to_bd": 25,
+          "mean_bd_iou_gain": -0.0035508405582039756,
+          "mean_combined_iou_gain": -0.003060382683720209,
+          "mean_delta_vs_bd": 0.0004904578744837668
+        },
+        "opposed_flipped": {
+          "n": 14,
+          "bd_better_than_start": 0,
+          "bd_worse_than_start": 14,
+          "combined_better_than_start": 14,
+          "combined_worse_than_start": 0,
+          "rescue_bd_regression": 14,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 14,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": -0.0004259347915649414,
+          "mean_combined_iou_gain": 0.00035393663815089634,
+          "mean_delta_vs_bd": 0.0007798714297158378
+        }
+      },
+      "clipped": [
+        0,
+        0
+      ],
+      "by_class": {
+        "airplane": {
+          "n": 234,
+          "bd_better_than_start": 120,
+          "bd_worse_than_start": 98,
+          "combined_better_than_start": 129,
+          "combined_worse_than_start": 88,
+          "rescue_bd_regression": 9,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 189,
+          "combined_loses_to_bd": 12,
+          "mean_bd_iou_gain": 0.0002899951914436797,
+          "mean_combined_iou_gain": 0.0009236587927891657,
+          "mean_delta_vs_bd": 0.0006336636013454861
+        },
+        "storage-tank": {
+          "n": 138,
+          "bd_better_than_start": 90,
+          "bd_worse_than_start": 44,
+          "combined_better_than_start": 90,
+          "combined_worse_than_start": 42,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 62,
+          "combined_loses_to_bd": 6,
+          "mean_bd_iou_gain": 0.002529700381168421,
+          "mean_combined_iou_gain": 0.0025724032218905463,
+          "mean_delta_vs_bd": 4.270284072212551e-05
+        },
+        "baseball-diamond": {
+          "n": 140,
+          "bd_better_than_start": 83,
+          "bd_worse_than_start": 56,
+          "combined_better_than_start": 87,
+          "combined_worse_than_start": 51,
+          "rescue_bd_regression": 5,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 121,
+          "combined_loses_to_bd": 14,
+          "mean_bd_iou_gain": 0.0011159547737666538,
+          "mean_combined_iou_gain": 0.0021144998925072805,
+          "mean_delta_vs_bd": 0.0009985451187406267
+        },
+        "basketball-court": {
+          "n": 8,
+          "bd_better_than_start": 7,
+          "bd_worse_than_start": 1,
+          "combined_better_than_start": 7,
+          "combined_worse_than_start": 1,
+          "rescue_bd_regression": 0,
+          "reverse_bd_improvement": 0,
+          "combined_beats_bd": 8,
+          "combined_loses_to_bd": 0,
+          "mean_bd_iou_gain": 0.012889973819255829,
+          "mean_combined_iou_gain": 0.017084933817386627,
+          "mean_delta_vs_bd": 0.004194959998130798
+        }
+      },
+      "isolated_equal_step_c01_direction": {
+        "near_square": {
+          "improves": 404,
+          "worsens": 98
+        },
+        "same_sign": {
+          "improves": 241,
+          "worsens": 28
+        },
+        "opposed": {
+          "improves": 163,
+          "worsens": 70
+        },
+        "opposed_kept_bd_sign": {
+          "improves": 149,
+          "worsens": 70
+        },
+        "opposed_flipped": {
+          "improves": 14,
+          "worsens": 0
+        }
+      }
+    }
+  },
+  "marginal_comparison": {
+    "0.002": {
+      "ungated_c01": {
+        "all": {
+          "n": 520,
+          "accepted": 520,
+          "better": 282,
+          "worse": 4,
+          "mean_delta_iou": 4.951317722980793e-05
+        },
+        "airplane": {
+          "n": 234,
+          "accepted": 234,
+          "better": 150,
+          "worse": 1,
+          "mean_delta_iou": 5.1336920159494774e-05
+        },
+        "storage-tank": {
+          "n": 138,
+          "accepted": 138,
+          "better": 14,
+          "worse": 0,
+          "mean_delta_iou": 3.594203271727631e-06
+        },
+        "baseball-diamond": {
+          "n": 140,
+          "accepted": 140,
+          "better": 110,
+          "worse": 3,
+          "mean_delta_iou": 7.746773106711251e-05
+        },
+        "basketball-court": {
+          "n": 8,
+          "accepted": 8,
+          "better": 8,
+          "worse": 0,
+          "mean_delta_iou": 0.00029906630516052246
+        }
+      },
+      "field_p3": {
+        "all": {
+          "n": 520,
+          "accepted": 390,
+          "better": 276,
+          "worse": 0,
+          "mean_delta_iou": 4.9384969931382397e-05
+        },
+        "airplane": {
+          "n": 234,
+          "accepted": 172,
+          "better": 144,
+          "worse": 0,
+          "mean_delta_iou": 5.074927949497842e-05
+        },
+        "storage-tank": {
+          "n": 138,
+          "accepted": 78,
+          "better": 14,
+          "worse": 0,
+          "mean_delta_iou": 3.635883331298828e-06
+        },
+        "baseball-diamond": {
+          "n": 140,
+          "accepted": 132,
+          "better": 110,
+          "worse": 0,
+          "mean_delta_iou": 7.793264729636057e-05
+        },
+        "basketball-court": {
+          "n": 8,
+          "accepted": 8,
+          "better": 8,
+          "worse": 0,
+          "mean_delta_iou": 0.00029906630516052246
+        }
+      },
+      "field_agree": {
+        "all": {
+          "n": 520,
+          "accepted": 381,
+          "better": 276,
+          "worse": 0,
+          "mean_delta_iou": 4.937476836718046e-05
+        },
+        "airplane": {
+          "n": 234,
+          "accepted": 170,
+          "better": 144,
+          "worse": 0,
+          "mean_delta_iou": 5.074265675667005e-05
+        },
+        "storage-tank": {
+          "n": 138,
+          "accepted": 71,
+          "better": 14,
+          "worse": 0,
+          "mean_delta_iou": 3.608672515205715e-06
+        },
+        "baseball-diamond": {
+          "n": 140,
+          "accepted": 132,
+          "better": 110,
+          "worse": 0,
+          "mean_delta_iou": 7.793264729636057e-05
+        },
+        "basketball-court": {
+          "n": 8,
+          "accepted": 8,
+          "better": 8,
+          "worse": 0,
+          "mean_delta_iou": 0.00029906630516052246
+        }
+      },
+      "bd_marginal": {
+        "all": {
+          "n": 520,
+          "accepted": 332,
+          "better": 282,
+          "worse": 0,
+          "mean_delta_iou": 4.954269299140343e-05
+        },
+        "airplane": {
+          "n": 234,
+          "accepted": 174,
+          "better": 150,
+          "worse": 0,
+          "mean_delta_iou": 5.14067136324369e-05
+        },
+        "storage-tank": {
+          "n": 138,
+          "accepted": 30,
+          "better": 14,
+          "worse": 0,
+          "mean_delta_iou": 3.1707079514213232e-06
+        },
+        "baseball-diamond": {
+          "n": 140,
+          "accepted": 120,
+          "better": 110,
+          "worse": 0,
+          "mean_delta_iou": 7.787815162113735e-05
+        },
+        "basketball-court": {
+          "n": 8,
+          "accepted": 8,
+          "better": 8,
+          "worse": 0,
+          "mean_delta_iou": 0.00029906630516052246
+        }
+      }
+    },
+    "0.025": {
+      "ungated_c01": {
+        "all": {
+          "n": 520,
+          "accepted": 520,
+          "better": 380,
+          "worse": 32,
+          "mean_delta_iou": 0.0006298582141215984
+        },
+        "airplane": {
+          "n": 234,
+          "accepted": 234,
+          "better": 189,
+          "worse": 12,
+          "mean_delta_iou": 0.0006336636013454861
+        },
+        "storage-tank": {
+          "n": 138,
+          "accepted": 138,
+          "better": 62,
+          "worse": 6,
+          "mean_delta_iou": 4.270284072212551e-05
+        },
+        "baseball-diamond": {
+          "n": 140,
+          "accepted": 140,
+          "better": 121,
+          "worse": 14,
+          "mean_delta_iou": 0.0009985451187406267
+        },
+        "basketball-court": {
+          "n": 8,
+          "accepted": 8,
+          "better": 8,
+          "worse": 0,
+          "mean_delta_iou": 0.004194959998130798
+        }
+      },
+      "field_p3": {
+        "all": {
+          "n": 520,
+          "accepted": 390,
+          "better": 347,
+          "worse": 9,
+          "mean_delta_iou": 0.0006252207435094394
+        },
+        "airplane": {
+          "n": 234,
+          "accepted": 172,
+          "better": 164,
+          "worse": 3,
+          "mean_delta_iou": 0.0006210753041454869
+        },
+        "storage-tank": {
+          "n": 138,
+          "accepted": 78,
+          "better": 54,
+          "worse": 0,
+          "mean_delta_iou": 4.2119751805844515e-05
+        },
+        "baseball-diamond": {
+          "n": 140,
+          "accepted": 132,
+          "better": 121,
+          "worse": 6,
+          "mean_delta_iou": 0.001002935426575797
+        },
+        "basketball-court": {
+          "n": 8,
+          "accepted": 8,
+          "better": 8,
+          "worse": 0,
+          "mean_delta_iou": 0.004194959998130798
+        }
+      },
+      "field_agree": {
+        "all": {
+          "n": 520,
+          "accepted": 381,
+          "better": 346,
+          "worse": 9,
+          "mean_delta_iou": 0.0006251559807704045
+        },
+        "airplane": {
+          "n": 234,
+          "accepted": 170,
+          "better": 163,
+          "worse": 3,
+          "mean_delta_iou": 0.0006209820763677614
+        },
+        "storage-tank": {
+          "n": 138,
+          "accepted": 71,
+          "better": 54,
+          "worse": 0,
+          "mean_delta_iou": 4.203380018040754e-05
+        },
+        "baseball-diamond": {
+          "n": 140,
+          "accepted": 132,
+          "better": 121,
+          "worse": 6,
+          "mean_delta_iou": 0.001002935426575797
+        },
+        "basketball-court": {
+          "n": 8,
+          "accepted": 8,
+          "better": 8,
+          "worse": 0,
+          "mean_delta_iou": 0.004194959998130798
+        }
+      },
+      "bd_marginal": {
+        "all": {
+          "n": 520,
+          "accepted": 332,
+          "better": 325,
+          "worse": 3,
+          "mean_delta_iou": 0.0006294643649688134
+        },
+        "airplane": {
+          "n": 234,
+          "accepted": 174,
+          "better": 171,
+          "worse": 2,
+          "mean_delta_iou": 0.0006317351108942276
+        },
+        "storage-tank": {
+          "n": 138,
+          "accepted": 30,
+          "better": 28,
+          "worse": 0,
+          "mean_delta_iou": 3.689700278682985e-05
+        },
+        "baseball-diamond": {
+          "n": 140,
+          "accepted": 120,
+          "better": 118,
+          "worse": 1,
+          "mean_delta_iou": 0.001006028481892177
+        },
+        "basketball-court": {
+          "n": 8,
+          "accepted": 8,
+          "better": 8,
+          "worse": 0,
+          "mean_delta_iou": 0.004194959998130798
+        }
+      }
+    }
+  },
+  "marginal_selection": {
+    "bd_rms_steps": [
+      0.005,
+      0.01
+    ],
+    "accept_margin": 1e-05,
+    "displacement_clip_rad": 0.15,
+    "field_probe_angle_rad": 0.05
+  },
+  "training_tiles": 32
+}

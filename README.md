@@ -4,6 +4,8 @@ Research code for rotated object detection with Rotated FCOS and R50-FPN. The or
 
 See [experiment setup and commands](REPRODUCE.md) for DIOR-R and NWPU-R. The original MMRotate documentation follows below.
 
+The [November NWPU-R C01 record](research/nwpu_c01/RESULTS_zh-CN.md) covers the official 36-epoch coordinate and feature-field ablations plus four frozen-classifier trials. See the [reproduction commands](research/nwpu_c01/REPRODUCE.md) and [raw metrics](research/nwpu_c01/results/metrics.csv).
+
 Upstream MMRotate 0.3.4: [`7755aa5`](https://github.com/open-mmlab/mmrotate/commit/7755aa53b6e2d9c61fd765e67a60daa7ed8a1e05). The snapshot incorporates the local rotated NMS device fix and research changes. The original Apache 2.0 license is retained.
 
 ---

@@ -1,0 +1,33 @@
+{
+  "reference_sha256": "ac3dea35a56c0423ef3d990b476a166fb1b7ea88ec9a6276b59f23d02bc038b7",
+  "reference_epoch": 6,
+  "semantic_weight": 0.1,
+  "flip": "none",
+  "gradient_output": "FCOS angle output (not shared model parameters)",
+  "groups": {
+    "all": {
+      "positions": 1143,
+      "bd_sq": 0.0013430588788849352,
+      "c01_sq": 8.777670218789942e-06,
+      "dot": 9.017498889597575e-06,
+      "common_nonzero": 539,
+      "same_sign": 383,
+      "sign_flips_after_adding_c01": 10,
+      "c01_to_bd_angle_rms": 0.08084294091233726,
+      "angle_gradient_cosine": 0.0830517793147737
+    },
+    "near_square": {
+      "positions": 539,
+      "bd_sq": 0.00035421453711358234,
+      "c01_sq": 8.777670218789942e-06,
+      "dot": 9.017498889597575e-06,
+      "common_nonzero": 539,
+      "same_sign": 383,
+      "sign_flips_after_adding_c01": 10,
+      "c01_to_bd_angle_rms": 0.15741874280358775,
+      "angle_gradient_cosine": 0.16171983032519183
+    }
+  },
+  "max_direct_distance_gradient": 0.0,
+  "training_tiles": 21
+}

@@ -73,6 +73,8 @@ def angle_content_values(pred, target, normalized_field, stride=8., grid_size=5,
 
 @ROTATED_LOSSES.register_module()
 class BDNearSquareAngleContentLoss(nn.Module):
+    geometry_diagnostic_key = 'bd_term'
+
     def __init__(self, alpha=3., semantic_weight=.1, square_ratio=1.2,
                  grid_size=5, feature_level=0, chunk_size=128, min_size=1e-4,
                  eps=1e-6, reduction='mean', loss_weight=1.):
@@ -88,6 +90,9 @@ class BDNearSquareAngleContentLoss(nn.Module):
         self.min_size, self.eps = min_size, eps
         self.reduction, self.loss_weight = reduction, loss_weight
         self.last_diagnostics = {}
+
+    def geometry_values(self, pred, target):
+        return bd_values(pred, target, alpha=self.alpha, min_size=self.min_size, agbb=False)
 
     def forward(self, pred, target, weight=None, avg_factor=None,
                 reduction_override=None, feature_maps=None, image_indices=None,
@@ -115,7 +120,7 @@ class BDNearSquareAngleContentLoss(nn.Module):
         if active.any():
             ids = active.nonzero().flatten()
             p, t = pred[ids], target[ids].detach()
-            geom = bd_values(p, t, alpha=self.alpha, min_size=self.min_size, agbb=False).to(pred.dtype)
+            geom = self.geometry_values(p, t).to(pred.dtype)
             geometry = geometry.index_copy(0, ids, geom)
             pixel_t = content_target[ids].detach()
             ratio = pixel_t[:, 2:4].amax(-1)/pixel_t[:, 2:4].amin(-1).clamp_min(self.min_size)
@@ -143,9 +148,10 @@ class BDNearSquareAngleContentLoss(nn.Module):
         if reduction != 'none':
             g = weight_reduce_loss(geometry.detach(), weight, reduction, avg_factor)
             a = weight_reduce_loss(auxiliary.detach(), weight, reduction, avg_factor)
-            self.last_diagnostics = dict(bd_term=float(g), content_term=float(a),
+            self.last_diagnostics = dict(content_term=float(a),
                 square_positive_frac=float(eligible.sum()/active.sum().clamp_min(1)),
                 square_positive_count=int(eligible.sum()), positive_count=int(active.sum()))
+            self.last_diagnostics[self.geometry_diagnostic_key] = float(g)
         return self.loss_weight*weight_reduce_loss(raw, weight, reduction, avg_factor)
 
 

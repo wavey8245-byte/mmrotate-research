@@ -1,5 +1,7 @@
 # Reproduce the RIoU and original C01 experiments
 
+The November official 36-epoch protocol and the frozen-classifier follow-ups have separate [configurations and commands](research/nwpu_c01/REPRODUCE.md) and a [results record](research/nwpu_c01/RESULTS_zh-CN.md).
+
 The configurations use Rotated FCOS, ResNet-50 with an ImageNet initialization, FPN, 800×800 input, batch size 2, and 12 epochs. Use seed 42 and evaluate the epoch 12 checkpoint. The RIoU baseline uses `-log(RIoU)`. C01 adds a P3 feature comparison to BD with 5×5 sampling, weight 0.1, and a ground-truth aspect ratio threshold of 1.2. Its auxiliary gradient acts directly on the decoded angle.
 
 ## Environment
